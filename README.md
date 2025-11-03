@@ -8,7 +8,7 @@ Um projeto prático desenvolvido durante o curso **DevClub**, com o objetivo de 
 
 ![Preview do Projeto](assets/img-projeto.png)
 
-![Preview do link](https://jhoncavalli.github.io/Curso-Dev-Club/)
+!<img width="100" height="100" src="https://img.icons8.com/bubbles/100/link.png" alt="link"/>[Preview do link](https://jhoncavalli.github.io/Curso-Dev-Club/)
 
 > 💡 *Interface limpa, intuitiva e funcional — desenvolvida com foco em usabilidade e boas práticas de front-end.*
 
