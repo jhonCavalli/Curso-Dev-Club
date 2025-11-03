@@ -11,6 +11,11 @@ body {
     color: #0f0f0f;
 }
 
+.logo-main {
+    display: flex;
+    justify-content: center;
+}
+
 .logo {
     width: 300px;
     display: block;
