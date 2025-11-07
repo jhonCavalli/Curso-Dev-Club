@@ -10,9 +10,11 @@ function convertValues() {
 
     console.log(convertSelect.value)
 
-
-    const dolarValue = 5.2;
+    const realValue = 1;
+    const dolarValue = 5.36;
     const euroValue = 6.2;
+    const libraValue = 7.05;
+    const bitcoinValue = 572680;
 
 
 
@@ -45,6 +47,7 @@ function convertValues() {
 function changeCurrency() {
  const moedaName = document .getElementById('moeda-name');
  const moedaImg = document .querySelector('.moeda-img');
+ 
 
     if (convertSelect.value === 'dolar') {
          moedaName.innerHTML = 'Dólar Americano';
@@ -55,6 +58,16 @@ function changeCurrency() {
     if (convertSelect.value === 'euro') {
          moedaName.innerHTML = 'Euro';
          moedaImg.src = './assets/img/Euro.png'
+    }
+
+    if (convertSelect.value === 'libra') {
+         moedaName.innerHTML = 'Libra';
+         moedaImg.src = './assets/img/Libra.png'
+    }
+    
+    if (convertSelect.value === 'bitcoin') {
+         moedaName.innerHTML = 'Bitcoin';
+         moedaImg.src = './assets/img/Bitcoin.png'
     }
 
     convertValues();
