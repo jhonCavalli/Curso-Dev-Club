@@ -13,14 +13,13 @@
 <body>
 
     <div class="logo-main">
-
         <img class="logo" src="assets/img/logo.gif" alt="logo-moedas">
     </div>
 
     <main>
         <label>
                 Conerveter <b>de</b>
-            <select class="select-moeda-origem" id="moeda-origem">
+            <select class="valores-moedas-1">
                 <option value="real">Real (BRL)</option>
                 <option value="dolar">Dolar (USD)</option>
                 <option value="euro">Euro (EUR)</option>
@@ -32,7 +31,8 @@
 
         <label>
                 Conerveter <b>para</b>
-            <select class="valores-moedas">
+            <select class="valores-moedas-2">
+                <option value="real">R$ Real (BRL)</option>
                 <option value="dolar">US$ Dolar (USA)</option>
                 <option value="euro">€ Euro (EUR)</option>
                 <option value="libra">£ Libra (GBP)</option>
@@ -42,7 +42,7 @@
 
         <label>
             Valor:
-            <input class="input-convert" type="number" placeholder="Digitar Valor">
+            <input class="input-convert" id ="input-convert-1" type="number" placeholder="Digitar Valor">
         </label>
 
         <button id ="converter" class="pulse">Converter</button>
@@ -60,23 +60,17 @@
             <div class="box-infor">
                 <img class="moeda-img" src="assets/img/Dolar.png" alt="logo-moeda-dolar">
                 <p class="moeda" id="moeda-name">Dólar Americano</p>
-                <p class="moeda-valor-convertido">UR$ 0,00</p>
+                <p class="moeda-valor-convertido">US$ 0,00</p>
             </div>
         </section>
     </main>
 
     <footer>
         <a class="link-1" href="https://www.instagram.com/oliverjhonatan.cavalli/"><img width="32" height="32" src="https://img.icons8.com/windows/32/instagram-new.png" alt="instagram"/>
-        </a> <!----Link do instagram---->
-
-        <a class ="link-2" href="https://wa.me/5517992441005"><img width="32" height="32" src="https://img.icons8.com/windows/32/whatsapp--v1.png" alt="whatsapp"/>
-        </a>    <!----Link do whatsapp---->
-
-        <a class ="link-3" href="https://github.com/jhonCavalli"><img width="32" height="32" src="https://img.icons8.com/windows/32/github.png" alt="github"/>
-        </a>   <!----Link do github---->
-        <p>Feito com 💜 por JhonCavalli | DevClub</p>
+        </a> <a class ="link-2" href="https://wa.me/5517992441005"><img width="32" height="32" src="https://img.icons8.com/windows/32/whatsapp--v1.png" alt="whatsapp"/>
+        </a>    <a class ="link-3" href="https://github.com/jhonCavalli"><img width="32" height="32" src="https://img.icons8.com/windows/32/github.png" alt="github"/>
+        </a>   <p>Feito com 💜 por JhonCavalli | DevClub</p>
     </footer>
-
 
     
 </body>
