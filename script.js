@@ -2,6 +2,50 @@ const convertButton = document.querySelector('#converter');
 const convertSelect = document.querySelector('.valores-moedas');
 
 
+
+
+
+
+
+function changeCurrency1() {
+    const moedaName1 = document.getElementById('moeda-name-1');
+    const moedaImg1 = document.querySelector('.moeda-img-1');
+
+
+
+
+    if (convertSelect.value === 'real') {
+        moedaName1.innerHTML = 'Real';
+        moedaImg1.src = './assets/img/brasil 2.png'
+    }
+
+
+    if (convertSelect.value === 'dolar') {
+        moedaName1.innerHTML = 'Dolar Americano';
+        moedaImg1.src = './assets/img/Dolar.png'
+    }
+
+
+    if (convertSelect.value === 'euro') {
+        moedaName1.innerHTML = 'Euro';
+        moedaImg1.src = './assets/img/Euro.png'
+    }
+
+    if (convertSelect.value === 'libra') {
+        moedaName1.innerHTML = 'Libra';
+        moedaImg1.src = './assets/img/Libra.png'
+    }
+
+    if (convertSelect.value === 'bitcoin') {
+        moedaName1.innerHTML = 'Bitcoin';
+        moedaImg1.src = './assets/img/Bitcoin.png'
+    }
+
+
+    convertValues();
+}
+
+
 function convertValues() {
     const inputCurrencyValue = document.querySelector('.input-convert').value;
     const moedaValor = document.querySelector('.moeda-valor'); // Valor em real
@@ -110,6 +154,8 @@ function changeCurrency() {
 
 
 
-convertSelect.addEventListener('change', changeCurrency);
+
+
+convertSelect.addEventListener('change', changeCurrency , changeCurrency1);
 
 convertButton.addEventListener('click', convertValues)
